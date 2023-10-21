@@ -1,34 +1,214 @@
+:root {
+  --white: #ffffff;
+  --black: rgb(0, 0, 0, );
+  --darkgrey: rgb(12, 12, 12);
+  --hoverpink: #c81784;
+  --shadowpink: #ffb4e2;
+
+
+}
+
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  font-family: 'Verdana', 'Monaco', sans-serif;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 5px;
+  height: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
   line-height: 1.5;
+  background-color: var(--darkgrey);
+  color: var(--white);
 }
 
-.heroBackground {
-  background-image: url(/starter/images/02-hero-bg.jpg);
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: black;
+  margin-bottom: 15px;
+  padding: 2px;
 }
 
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+h1 {
+  width: 10%;
+  font-weight: 450;
+  margin-left: 3%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  cursor: pointer;
 }
 
-p {
-  margin: 0;
+h1:hover {
+  color: var(--hoverpink);
+  text-shadow: 0px 0px 30px var(--shadowpink);
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
-.hero-banner {
-  background-image: url(../images/02-hero-bg.jpg);
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 35%;
+  margin-right: 0px;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+
+nav p:hover {
+  color: var(--hoverpink);
+  text-shadow: 0px 0px 30px var(--shadowpink);
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+h2 {
+  font-weight: 100;
+  font-size: xx-large;
+  margin-left: 25px;
+}
+
+b:hover {
+  color: #f749b4;
+  text-shadow: 0px 0px 30px #78004a;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+h3 {
+  font-weight: 70;
+  font-size: x-large;
+  margin-left: 25px;
+  color: #f4f4f4;
+}
+
+#heroBanner {
+  background-image: url("../images/imgbg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+  align-items: center;
+
+}
+
+.heroText {
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  position: absolute;
+
+}
+
+h4 {
+  font-weight: 65;
+  font-size: large;
+  color: #f4f4f4;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+
+}
+
+#mainText {
+  font-size: 15;
+}
+
+.leftGrid {
+  display: flex;
+  width: 20%;
+  margin-left: 3px;
+  border-right: 5px solid;
+  border-color: black;
+
+}
+
+.rightGrid {
+  display: flex;
+  width: 75%;
+  align-items: center;
+
+
+}
+
+.exampleArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+
+#work {
+  margin: 0px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "example5 example5 example5"
+    "example6 example3 example3"
+    "example6 example4 example2"
+    "example6 example4 example2"
+  ;
+}
+
+.etext {
+  background-color: var(--black);
+  padding: 10px;
+  height: 20px;
+  color: var(--white);
+  font-size: 18px;
+}
+
+#example2 {
+  grid-area: example2;
+  background-image: url(../images/img2.png);
+
+}
+
+#example3 {
+  grid-area: example3;
+  background-image: url(../images/img3.png);
+
+}
+
+#example4 {
+  grid-area: example4;
+  background-image: url(../images/img4.png);
+
+}
+
+#example5 {
+  grid-area: example5;
+  background-image: url(../images/img5.png);
+}
+
+#example6 {
+  grid-area: example6;
+  background-image: url(../images/img6.png);
+
+}
+
+footer {
+  background-color: var(--black);
+  display: flex;
+  flex-direction: row;
 }
