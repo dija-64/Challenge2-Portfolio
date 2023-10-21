@@ -13,7 +13,6 @@
 }
 
 body {
-  height: 100%;
   padding-left: 5%;
   padding-right: 5%;
   line-height: 1.5;
@@ -96,6 +95,7 @@ h3 {
   background-repeat: no-repeat;
   display: grid;
   align-items: center;
+  padding: 15px;
 
 }
 
@@ -118,8 +118,8 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   text-align: center;
 
 }
@@ -134,8 +134,7 @@ main {
   display: flex;
   width: 20%;
   margin-left: 3px;
-  border-right: 5px solid;
-  border-color: black;
+
 
 }
 
@@ -143,7 +142,9 @@ main {
   display: flex;
   width: 75%;
   align-items: center;
-  justify-content: flex-end;
+  padding-left: 15px;
+  border-left: 7px solid;
+  border-color: black;
 
 
 }
@@ -152,6 +153,10 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+
 }
 
 .exampleArea {
@@ -165,9 +170,7 @@ main {
 }
 
 #work {
-  margin: 0px;
-  background-size: auto;
-  background-repeat: no-repeat;
+  margin: 5px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
@@ -184,43 +187,63 @@ main {
   padding: 10px;
   height: 20px;
   color: var(--white);
-  font-size: 15px;
+  font-size: 14px;
 }
 
 #example2 {
   grid-area: example2;
   background-image: url(../images/img2.png);
+  height: 500px;
+  width: 90%;
 
+}
+
+#example2:hover,
+#example3:hover,
+#example4:hover,
+#example5:hover,
+#example6:hover {
+  color: var(--white);
+  box-shadow: 0 5px 15px var(--white);
 }
 
 #example3 {
   grid-area: example3;
   background-image: url(../images/img3.png);
-
+  height: 250px;
+  width: 90%;
 }
 
 #example4 {
   grid-area: example4;
   background-image: url(../images/img4.png);
-
+  height: 500px;
+  width: 90%;
 }
 
 #example5 {
   grid-area: example5;
   background-image: url(../images/img5.png);
+  height: 250px;
+  width: 90%;
 }
 
 #example6 {
   grid-area: example6;
   background-image: url(../images/img6.png);
-
+  height: 750px;
+  width: 90%;
 }
 
 h5 {
   font-weight: 65;
   font-size: large;
   color: #f4f4f4;
+  display: flex;
+  align-items: center;
   margin-left: 3%;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .contact {
