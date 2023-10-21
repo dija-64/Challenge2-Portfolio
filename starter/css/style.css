@@ -112,6 +112,7 @@ h4 {
   font-weight: 65;
   font-size: large;
   color: #f4f4f4;
+  margin-left: 5px;
 }
 
 main {
@@ -175,7 +176,7 @@ main {
   padding: 10px;
   height: 20px;
   color: var(--white);
-  font-size: 18px;
+  font-size: 15px;
 }
 
 #example2 {
@@ -207,8 +208,39 @@ main {
 
 }
 
-footer {
+h5 {
+  font-weight: 65;
+  font-size: large;
+  color: #f4f4f4;
+  margin-left: 5px;
+}
+
+.contact {
   background-color: var(--black);
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  background-color: black;
+  margin-bottom: 15px;
+  padding: 2px;
+  margin-top: 15px;
+}
+
+#contactInfo {
+  display: flex;
+  flex-direction: row;
+  width: 65%;
+  margin-right: 5px;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+
+#contactInfo p:hover {
+  color: var(--hoverpink);
+  text-shadow: 0px 0px 30px var(--shadowpink);
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
