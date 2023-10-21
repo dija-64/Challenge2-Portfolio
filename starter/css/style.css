@@ -13,7 +13,6 @@
 }
 
 body {
-  margin: 5px;
   height: 100%;
   padding-left: 5%;
   padding-right: 5%;
@@ -69,7 +68,7 @@ nav p:hover {
 }
 
 h2 {
-  font-weight: 100;
+  font-weight: 150;
   font-size: xx-large;
   margin-left: 25px;
 }
@@ -84,7 +83,7 @@ b:hover {
 }
 
 h3 {
-  font-weight: 70;
+  font-weight: 20;
   font-size: x-large;
   margin-left: 25px;
   color: #f4f4f4;
@@ -125,8 +124,10 @@ main {
 
 }
 
+
 #mainText {
-  font-size: 15;
+  font-size: medium;
+  font-weight: lighter;
 }
 
 .leftGrid {
@@ -142,8 +143,15 @@ main {
   display: flex;
   width: 75%;
   align-items: center;
+  justify-content: flex-end;
 
 
+}
+
+#workGridArea {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .exampleArea {
@@ -212,7 +220,7 @@ h5 {
   font-weight: 65;
   font-size: large;
   color: #f4f4f4;
-  margin-left: 5px;
+  margin-left: 3%;
 }
 
 .contact {
