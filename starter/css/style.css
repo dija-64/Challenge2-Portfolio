@@ -314,3 +314,54 @@ a:visited {
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
+
+@media only screen and (max-width : 900px) {
+
+  nav {
+    justify-content: inherit;
+  }
+
+  #contactInfo {
+    justify-content: inherit;
+  }
+}
+
+@media only screen and (max-width : 788px) {
+
+  #work {
+    justify-content: space-between;
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "example2"
+      "example3"
+      "example4"
+      "example5"
+      "example6";
+  }
+
+  #example2,
+  #example3,
+  #example4,
+  #example5,
+  #example6 {
+    height: 50%;
+    max-width: 50%;
+  }
+
+  .etext {
+    font-size: medium;
+  }
+
+  nav {
+    font-size: x-small;
+  }
+
+  h5 {
+    font-size: medium;
+  }
+
+  #contactInfo {
+    font-size: x-small;
+  }
+}
