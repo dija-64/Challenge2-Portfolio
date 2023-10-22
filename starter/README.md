@@ -6,6 +6,8 @@ This is the Alpha version of my portfolio. It has been made from scratch and wil
 
 This is a link to the deployed application: https://dija-64.github.io/Challenge2-Portfolio/
 
+Screenshot of deployed application: ![Alt text](image-1.png)
+
 ## Installation
 
 N/A
